@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success) or !0 (Failure)
+ */
+
 int main(void)
 {
 	char str[55];
