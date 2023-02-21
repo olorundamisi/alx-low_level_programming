@@ -12,7 +12,7 @@ int main(void)
 {
 	unsigned long int i, j, k;
 	unsigned long int range;
-	unsigned long int prev1, prev2
+	unsigned long int prev1, prev2;
 	unsigned long int next1, next2;
 
 	j = 1;
@@ -24,6 +24,7 @@ int main(void)
 	for (i = 1; i < 91; i++)
 	{
 		printf(", %lu", k);
+
 		k += j;
 		j = k - j;
 	}
@@ -48,3 +49,4 @@ int main(void)
 
 	return (0);
 }
+
