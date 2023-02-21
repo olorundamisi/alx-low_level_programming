@@ -1,11 +1,13 @@
 #include "main.h"
 
+
 /**
  * _isalpha - checks for alphabetic character
  * @c: parameter
  *
  * Return: 1 if lowercase, 0 otherwise
  */
+
 
 int _isalpha(int c)
 {
