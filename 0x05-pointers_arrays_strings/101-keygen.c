@@ -16,7 +16,7 @@ int main(void)
 	int pass[100];
 	int sum = 0
 
-	int i,
+	int i;
 	int n;
 
 	srand(time(NULL));
