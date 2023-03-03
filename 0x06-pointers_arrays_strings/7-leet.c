@@ -12,7 +12,7 @@
 
 char *leet(char *s)
 {
-	char arr[9] = {'o', 'l', 0, 'e', 'a', 0, 0, 't'};
+	char A[9] = {'o', 'l', 0, 'e', 'a', 0, 0, 't'};
 	int i, j;
 
 	i = 0;
@@ -21,7 +21,7 @@ char *leet(char *s)
 		j = 0;
 		while (j < 8)
 		{
-			if (s[i] == arr[j] || s[i] - 'A' + 'a' == arr[j])
+			if (s[i] == A[j] || s[i] - 'A' + 'a' == A[j])
 			{
 				s[i] = j + 48;
 			}
