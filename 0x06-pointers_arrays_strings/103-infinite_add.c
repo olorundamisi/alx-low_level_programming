@@ -16,7 +16,8 @@
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int i = 0, j = 0;
-	int calc, longest, n1int, n2int;
+	int calc, longest;
+	int n1int, n2int;
 	int sum = 0;
 
 	while (n1[i] != '\0')
@@ -39,7 +40,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	while (longest >= 0)
 	{
 		calc = n1int + n2int + sum;
-
 		if (calc >= 10)
 			sum = calc / 10;
 		else

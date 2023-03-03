@@ -49,12 +49,10 @@ void print_buffer(char *b, int size)
 					printf(".");
 				i++;
 			}
-
 			if (byte >= size)
 				continue;
 
 			printf("\n");
-
 			byte += 10;
 		}
 	}
