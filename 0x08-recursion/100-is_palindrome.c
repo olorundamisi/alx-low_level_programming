@@ -20,7 +20,7 @@ int is_palindrome(char *s)
 {
 	if (*s == '\0')
 		return (1);
-		
+
 	return (compare(s, 0, _strlen(s) - 1));
 }
 
