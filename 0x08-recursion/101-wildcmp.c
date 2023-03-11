@@ -2,7 +2,7 @@
 
 
 /**
- * wildcmp - compares two strings to check if identical.
+ * wildcmp - compares two strings @s1 and @s2 to check if they are identical.
  *
  * @s1: string
  * @s2: special character holding string
@@ -12,10 +12,13 @@
 
 int wildcmp(char *s1, char *s2)
 {
-	if (*s2 == '*' && *(s2 + 1) && *s1 == '\0')
+	/* Bases cases */
+	if (*s2 == '*' && s2[1] && *s1 == '\0')
 		return (0);
-	if (*s1 == '\0' && *s2 == '\0')
+	if (*s1 == '\0' && *s1 == *s2)
 		return (1);
+
+	/* Recursive cases */
 	if (*s1 == *s2)
 		return (wildcmp(s1 + 1, s2 + 1));
 	if (*s2 == '*')
