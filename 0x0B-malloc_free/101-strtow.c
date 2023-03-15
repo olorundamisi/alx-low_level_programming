@@ -43,10 +43,7 @@ int word_count(char *s)
 char **strtow(char *str)
 {
 	char **p, *temp;
-	int i, k = 0;
-	int len = 0, words;
-	int c = 0;
-	int start, end;
+	int i, k = 0, len = 0, words c = 0, start, end;
 
 	while (*(str + len))
 		len++;
@@ -81,7 +78,6 @@ char **strtow(char *str)
 		else if (c++ == 0)
 			start = i;
 	}
-
 	p[k] = NULL;
 
 	return (p);
