@@ -44,8 +44,8 @@ char **strtow(char *str)
 {
 	char **p, *temp;
 	int i, k = 0;
-	int len = 0, words
-	int c = 0
+	int len = 0, words;
+	int c = 0;
 	int start, end;
 
 	while (*(str + len))
