@@ -1,0 +1,132 @@
+
+========== 0-main.c ==========
+main
+
+========== 0-malloc_checked.c ==========
+malloc_checked
+
+========== 100-main.c ==========
+simple_print_buffer
+main
+
+========== 100-realloc.c ==========
+_realloc
+
+========== 101-mul.c ==========
+101-mul.c:169: ERROR: trailing whitespace
+101-mul.c:169: WARNING: More than 40 lines in a function
+101-mul.c:170: WARNING: More than 40 lines in a function
+total: 1 errors, 2 warnings, 171 lines checked
+_print
+mul
+check_for_digits
+init
+main
+
+========== 1-main.c ==========
+1-main.c:15: WARNING: please, no spaces at the start of a line
+1-main.c:17: WARNING: please, no spaces at the start of a line
+1-main.c:18: WARNING: please, no spaces at the start of a line
+1-main.c:20: WARNING: please, no spaces at the start of a line
+1-main.c:22: WARNING: please, no spaces at the start of a line
+total: 0 errors, 5 warnings, 23 lines checked
+main
+
+========== 1-string_nconcat.c ==========
+1-string_nconcat.c:59: WARNING: More than 40 lines in a function
+total: 0 errors, 1 warnings, 60 lines checked
+string_nconcat
+
+========== 2-calloc.c ==========
+_calloc
+
+========== 2-main.c ==========
+2-main.c:19: WARNING: please, no spaces at the start of a line
+2-main.c:21: WARNING: please, no spaces at the start of a line
+2-main.c:22: WARNING: please, no spaces at the start of a line
+2-main.c:23: WARNING: please, no spaces at the start of a line
+2-main.c:24: ERROR: code indent should use tabs where possible
+2-main.c:24: WARNING: please, no spaces at the start of a line
+2-main.c:24: WARNING: suspect code indent for conditional statements (8, 12)
+2-main.c:25: ERROR: code indent should use tabs where possible
+2-main.c:25: WARNING: please, no spaces at the start of a line
+2-main.c:26: ERROR: code indent should use tabs where possible
+2-main.c:26: WARNING: please, no spaces at the start of a line
+2-main.c:27: ERROR: code indent should use tabs where possible
+2-main.c:27: WARNING: please, no spaces at the start of a line
+2-main.c:29: ERROR: code indent should use tabs where possible
+2-main.c:29: WARNING: please, no spaces at the start of a line
+2-main.c:29: WARNING: suspect code indent for conditional statements (8, 12)
+2-main.c:30: ERROR: code indent should use tabs where possible
+2-main.c:30: WARNING: please, no spaces at the start of a line
+2-main.c:31: ERROR: code indent should use tabs where possible
+2-main.c:31: WARNING: please, no spaces at the start of a line
+2-main.c:32: ERROR: code indent should use tabs where possible
+2-main.c:32: WARNING: please, no spaces at the start of a line
+2-main.c:34: ERROR: code indent should use tabs where possible
+2-main.c:34: WARNING: please, no spaces at the start of a line
+2-main.c:36: ERROR: code indent should use tabs where possible
+2-main.c:36: WARNING: please, no spaces at the start of a line
+2-main.c:37: WARNING: please, no spaces at the start of a line
+2-main.c:38: WARNING: please, no spaces at the start of a line
+2-main.c:50: WARNING: please, no spaces at the start of a line
+2-main.c:52: WARNING: please, no spaces at the start of a line
+2-main.c:53: WARNING: please, no spaces at the start of a line
+2-main.c:54: WARNING: please, no spaces at the start of a line
+2-main.c:55: WARNING: please, no spaces at the start of a line
+2-main.c:57: WARNING: please, no spaces at the start of a line
+2-main.c:59: WARNING: please, no spaces at the start of a line
+2-main.c:61: WARNING: please, no spaces at the start of a line
+total: 10 errors, 26 warnings, 62 lines checked
+simple_print_buffer
+main
+
+========== 3-array_range.c ==========
+3-array_range.c:25: ERROR: spaces preferred around that '*' (ctx:WxV)
+total: 1 errors, 0 warnings, 39 lines checked
+array_range
+
+========== 3-main.c ==========
+3-main.c:19: WARNING: please, no spaces at the start of a line
+3-main.c:21: WARNING: please, no spaces at the start of a line
+3-main.c:22: WARNING: please, no spaces at the start of a line
+3-main.c:23: WARNING: please, no spaces at the start of a line
+3-main.c:24: ERROR: code indent should use tabs where possible
+3-main.c:24: WARNING: please, no spaces at the start of a line
+3-main.c:24: WARNING: suspect code indent for conditional statements (8, 12)
+3-main.c:25: ERROR: code indent should use tabs where possible
+3-main.c:25: WARNING: please, no spaces at the start of a line
+3-main.c:26: ERROR: code indent should use tabs where possible
+3-main.c:26: WARNING: please, no spaces at the start of a line
+3-main.c:27: ERROR: code indent should use tabs where possible
+3-main.c:27: WARNING: please, no spaces at the start of a line
+3-main.c:28: ERROR: code indent should use tabs where possible
+3-main.c:28: WARNING: please, no spaces at the start of a line
+3-main.c:28: WARNING: suspect code indent for conditional statements (8, 12)
+3-main.c:29: ERROR: code indent should use tabs where possible
+3-main.c:29: WARNING: please, no spaces at the start of a line
+3-main.c:30: ERROR: code indent should use tabs where possible
+3-main.c:30: WARNING: please, no spaces at the start of a line
+3-main.c:31: ERROR: code indent should use tabs where possible
+3-main.c:31: WARNING: please, no spaces at the start of a line
+3-main.c:32: ERROR: code indent should use tabs where possible
+3-main.c:32: WARNING: please, no spaces at the start of a line
+3-main.c:33: ERROR: code indent should use tabs where possible
+3-main.c:33: WARNING: please, no spaces at the start of a line
+3-main.c:34: WARNING: please, no spaces at the start of a line
+3-main.c:35: WARNING: please, no spaces at the start of a line
+3-main.c:47: WARNING: please, no spaces at the start of a line
+3-main.c:49: WARNING: please, no spaces at the start of a line
+3-main.c:50: WARNING: please, no spaces at the start of a line
+3-main.c:52: WARNING: please, no spaces at the start of a line
+3-main.c:54: WARNING: please, no spaces at the start of a line
+total: 10 errors, 23 warnings, 55 lines checked
+simple_print_buffer
+main
+
+========== main.h ==========
+
+========== _putchar.c ==========
+_putchar
+
+========== README.md ==========
