@@ -12,12 +12,12 @@
 
 int main(void)
 {
-    char *concat;
+	char *concat;
 
-    concat = string_nconcat("Best ", "Schools !!!", 3);
-    printf("%s\n", concat);
+	concat = string_nconcat("Best ", "Schools !!!", 3);
+	printf("%s\n", concat);
 
-    free(concat);
+	free(concat);
 
-    return (0);
+	return (0);
 }
