@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 
+
 /**
  * before_main - function executed before main
  * Return: void
