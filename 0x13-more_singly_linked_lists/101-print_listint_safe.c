@@ -1,6 +1,5 @@
 #include "lists.h"
 
-
 /**
  * print_listint_safe - prints a listint_t list
  * @head: pointer to the first element of the list
@@ -13,7 +12,7 @@ size_t print_listint_safe(const listint_t *head)
 	listint_t *b = (listint_t *)head;
 
 	i = 0;
-	while (b && (b > b->next))
+	while (b && b > b->next)
 	{
 		printf("[%p] %d\n", (void *)b, b->n);
 		b = b->next;
@@ -27,3 +26,4 @@ size_t print_listint_safe(const listint_t *head)
 	}
 	return (i);
 }
+
