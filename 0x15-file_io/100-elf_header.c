@@ -3,8 +3,8 @@
 
 
 /**
- * get_type - get the file type
- * @ehdr: ptr to struct of ELF header and features
+ * get_type - determine the type of file
+ * @ehdr: pointer to struct of ELF header features
  */
 
 void get_type(Elf64_Ehdr *ehdr)
@@ -12,30 +12,30 @@ void get_type(Elf64_Ehdr *ehdr)
 	printf("%-35s", "Type:");
 	switch (ehdr->e_type)
 	{
-		case ET_NONE:
-			printf("NONE (Unknown type)\n");
-			break;
-		case ET_REL:
-			printf("REL (Relocatable file)\n");
-			break;
-		case ET_EXEC:
-			printf("EXEC (Executable file)\n");
-			break;
-		case ET_DYN:
-			printf("DYN (Shared object file)\n");
-			break;
-		case ET_CORE:
-			printf("CORE (Core file)\n");
-			break;
+	case ET_NONE:
+		printf("NONE (Unknown type)\n");
+		break;
+	case ET_REL:
+		printf("REL (Relocatable file)\n");
+		break;
+	case ET_EXEC:
+		printf("EXEC (Executable file)\n");
+		break;
+	case ET_DYN:
+		printf("DYN (Shared object file)\n");
+		break;
+	case ET_CORE:
+		printf("CORE (Core file)\n");
+		break;
 	}
 }
 
 
 /**
- * main - entry point of program
+ * main - entry point for program to determine the type of file
  * @argc: argument count - number of arguments
  * @argv: argument vector - array containing arguments
- * Return: 1 or -1
+ * Return: 1 if function is successful
  */
 
 int main(int argc, char *argv[])
