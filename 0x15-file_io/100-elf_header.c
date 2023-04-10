@@ -2,11 +2,11 @@
 
 
 /**
- * get_filetype - get the file type
+ * get_type - get the file type
  * @ehdr: ptr to struct of ELF header and features
  */
 
-void get_filetype(Elf64_Ehdr *ehdr)
+void get_type(Elf64_Ehdr *ehdr)
 {
 	printf("%-35s", "Type:");
 	switch (ehdr->e_type)
