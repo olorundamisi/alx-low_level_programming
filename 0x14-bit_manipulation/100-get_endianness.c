@@ -2,7 +2,7 @@
 
 
 /**
- * get_endianness - print the endianness of the machine 
+ * get_endianness - print the endianness of the machine
  * Could be little or big
  * Return: void
  */
