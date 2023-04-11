@@ -1,3 +1,7 @@
+#ifndef PRINTF_OS_ABI_H
+#define PRINTF_OS_ABI_H
+
+
 #include "main.h"
 
 
@@ -46,3 +50,6 @@ void printf_os_abi(unsigned char *elf_identifier)
 			printf("<unknown: %x>\n", elf_identifier[EI_OSABI]);
 	}
 }
+
+
+#endif /* PRINTF_OS_ABI_H */

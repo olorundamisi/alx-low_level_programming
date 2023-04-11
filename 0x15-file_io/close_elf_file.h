@@ -1,3 +1,7 @@
+#ifndef CLOSE_ELF_FILE_H
+#define CLOSE_ELF_FILE_H
+
+
 #include "main.h"
 
 
@@ -16,3 +20,6 @@ void close_elf_file(int elf)
 		exit(98);
 	}
 }
+
+
+#endif /* CLOSE_ELF_FILE_H */

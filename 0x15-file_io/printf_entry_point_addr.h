@@ -1,13 +1,18 @@
+#ifndef PRINTF_ENTRY_POINT_ADDR_H
+#define PRINTF_ENTRY_POINT_ADDR_H
+
+
 #include "main.h"
 
 
 /**
- * printf_entry_point_addr - print the Entry Point Address for the ELF Header file
+ * printf_entry_point_addr - print Entry Point Address for the ELF Header file
  * @elf_entry: ELF entry point address
  * @elf_identifier: char pointer containing ELF data
  */
 
-void printf_entry_point_addr(unsigned long int elf_entry, unsigned char *elf_identifier)
+void printf_entry_point_addr(
+		unsigned long int elf_entry, unsigned char *elf_identifier)
 {
 	printf("  Entry point address:               ");
 
@@ -24,3 +29,6 @@ void printf_entry_point_addr(unsigned long int elf_entry, unsigned char *elf_ide
 	else
 		printf("%#lx\n", elf_entry);
 }
+
+
+#endif /* PRINTF_ENTRY_POINT_ADDR_H */

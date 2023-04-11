@@ -1,3 +1,7 @@
+#ifndef PRINTF_DATA_H
+#define PRINTF_DATA_H
+
+
 #include "main.h"
 
 
@@ -25,3 +29,6 @@ void printf_data(unsigned char *elf_identifier)
 			printf("<unknown: %x>\n", elf_identifier[EI_CLASS]);
 	}
 }
+
+
+#endif /* PRINTF_DATA_H */

@@ -26,7 +26,8 @@ void printf_version(unsigned char *elf_identifier);
 void printf_os_abi(unsigned char *elf_identifier);
 void printf_abi_version(unsigned char *elf_identifier);
 void printf_type(unsigned int elf_type, unsigned char *elf_identifier);
-void printf_entry_point_addr(unsigned long int elf_entry, unsigned char *elf_identifier);
+void printf_entry_point_addr(unsigned long int elf_entry,
+		unsigned char *elf_identifier);
 void close_elf_file(int elf);
 
 

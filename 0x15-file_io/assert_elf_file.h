@@ -1,3 +1,7 @@
+#ifndef ASSERT_ELF_FILE_H
+#define ASSERT_ELF_FILE_H
+
+
 #include "main.h"
 
 
@@ -23,3 +27,6 @@ void assert_elf_file(unsigned char *elf_identifier)
 		}
 	}
 }
+
+
+#endif /* ASSERT_ELF_FILE_H */

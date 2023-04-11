@@ -37,14 +37,14 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 
 	assert_elf_file(elf_header->e_ident);
 	printf("ELF Header:\n");
-	printf_magic			(elf_header->e_ident);
-	printf_class			(elf_header->e_ident);
-	printf_data				(elf_header->e_ident);
-	printf_version			(elf_header->e_ident);
-	printf_os_abi			(elf_header->e_ident);
-	printf_abi_version		(elf_header->e_ident);
-	printf_type				(elf_header->e_type, elf_header->e_ident);
-	printf_entry_point_addr	(elf_header->e_entry, elf_header->e_ident);
+	printf_magic(elf_header->e_ident);
+	printf_class(elf_header->e_ident);
+	printf_data(elf_header->e_ident);
+	printf_version(elf_header->e_ident);
+	printf_os_abi(elf_header->e_ident);
+	printf_abi_version(elf_header->e_ident);
+	printf_type(elf_header->e_type, elf_header->e_ident);
+	printf_entry_point_addr(elf_header->e_entry, elf_header->e_ident);
 
 	free(elf_header);
 	close_elf_file(file_open);

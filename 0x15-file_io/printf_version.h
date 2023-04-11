@@ -1,3 +1,7 @@
+#ifndef PRINTF_VERSION
+#define PRINTF_VERSION
+
+
 #include "main.h"
 
 
@@ -21,3 +25,6 @@ void printf_version(unsigned char *elf_identifier)
 			break;
 	}
 }
+
+
+#endif /* PRINTF_VERSION */

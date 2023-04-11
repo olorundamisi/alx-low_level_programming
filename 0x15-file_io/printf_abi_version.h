@@ -1,3 +1,7 @@
+#ifndef PRINTF_ABI_VERSION_H
+#define PRINTF_ABI_VERSION_H
+
+
 #include "main.h"
 
 
@@ -11,3 +15,6 @@ void printf_abi_version(unsigned char *elf_identifier)
 	printf("  ABI Version:                       %d\n",
 			elf_identifier[EI_ABIVERSION]);
 }
+
+
+#endif /* PRINTF_ABI_VERSION_H */

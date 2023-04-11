@@ -1,3 +1,7 @@
+#ifndef PRINTF_MAGIC_H
+#define PRINTF_MAGIC_H
+
+
 #include "main.h"
 
 
@@ -22,3 +26,6 @@ void printf_magic(unsigned char *elf_identifier)
 			printf(" ");
 	}
 }
+
+
+#endif /* PRINTF_MAGIC_H */

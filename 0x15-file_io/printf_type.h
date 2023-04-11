@@ -1,3 +1,7 @@
+#ifndef PRINTF_TYPE_H
+#define PRINTF_TYPE_H
+
+
 #include "main.h"
 
 
@@ -35,3 +39,6 @@ void printf_type(unsigned int elf_type, unsigned char *elf_identifier)
 			printf("<unknown: %x>\n", elf_type);
 	}
 }
+
+
+#endif /* PRINTF_TYPE_H */
