@@ -102,7 +102,7 @@ void printf_type(unsigned int e_type, unsigned char *e_ident)
 /**
  * printf_entry_point_addr - print Entry Point Address for the ELF Header file
  * @e_entry: ELF entry point address
- * @e_identifier: char pointer containing ELF data
+ * @e_ident: char pointer containing ELF data
  */
 
 void printf_entry_point_addr(unsigned long int e_entry, unsigned char *e_ident)
