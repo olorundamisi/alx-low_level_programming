@@ -1,46 +1,53 @@
-#include <stdio.h>
-#include <elf.h>
+#include "elf_header.h"
 
 
 /**
- * get_type - determine the type of file
- * @ehdr: pointer to struct of ELF header features
- */
-
-void get_type(Elf64_Ehdr *ehdr)
-{
-	printf("%-35s", "Type:");
-	switch (ehdr->e_type)
-	{
-	case ET_NONE:
-		printf("NONE (Unknown type)\n");
-		break;
-	case ET_REL:
-		printf("REL (Relocatable file)\n");
-		break;
-	case ET_EXEC:
-		printf("EXEC (Executable file)\n");
-		break;
-	case ET_DYN:
-		printf("DYN (Shared object file)\n");
-		break;
-	case ET_CORE:
-		printf("CORE (Core file)\n");
-		break;
-	}
-}
-
-
-/**
- * main - entry point for program to determine the type of file
+ * main - print information contained in ELF header at the beginnning of
+ *        an ELF file
  * @argc: argument count - number of arguments
  * @argv: argument vector - array containing arguments
- * Return: 1 if function is successful
+ * Return: integer
  */
 
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	printf("argc:%d, argv:%p\n", argc, (void *)*argv);
+	Elf64_Ehdr *elf_header;
+	int file_open, file_read;
 
-	return (1);
+	file_open = open(argv[1], O_RDONLY);
+	if (file_open == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
+		exit(98); }
+
+	elf_header = malloc(sizeof(Elf64_Ehdr));
+	if (elf_header == NULL)
+	{
+		close_elf_file(file_open);
+		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
+		exit(98); }
+
+	file_read = read(file_open, elf_header, sizeof(Elf64_Ehdr));
+	if (file_read == -1)
+	{
+		free(elf_header);
+		close_elf_file(file_open);
+		dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
+		exit(98); }
+
+	assert_elf_file(elf_header->elf_identifier);
+	printf("ELF Header:\n");
+	printf_magic			(elf_header->elf_identifier);
+	printf_class			(elf_header->elf_identifier);
+	printf_data				(elf_header->elf_identifier);
+	printf_version			(elf_header->elf_identifier);
+	printf_os_abi			(elf_header->elf_identifier);
+	printf_abi_version		(elf_header->elf_identifier);
+	printf_type				(elf_header->elf_type, elf_header->elf_identifier);
+	printf_entry_point_addr	(elf_header->elf_entry, elf_header->elf_identifier);
+
+	free(elf_header);
+	close_elf_file(file_open);
+
+	return (0);
 }

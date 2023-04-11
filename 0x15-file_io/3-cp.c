@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 	char buf[BUF_SIZE];
 	char *file_from, *file_to;
 	int fdread, fdwrite;
-	ssize_t rd = 1024, wr;
+	ssize_t rd = BUF_SIZE, wr;
 
 	if (argc != 3)
 	{
