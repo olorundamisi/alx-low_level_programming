@@ -35,16 +35,16 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
 		exit(98); }
 
-	assert_elf_file(elf_header->elf_identifier);
+	assert_elf_file(elf_header->e_ident);
 	printf("ELF Header:\n");
-	printf_magic			(elf_header->elf_identifier);
-	printf_class			(elf_header->elf_identifier);
-	printf_data				(elf_header->elf_identifier);
-	printf_version			(elf_header->elf_identifier);
-	printf_os_abi			(elf_header->elf_identifier);
-	printf_abi_version		(elf_header->elf_identifier);
-	printf_type				(elf_header->elf_type, elf_header->elf_identifier);
-	printf_entry_point_addr	(elf_header->elf_entry, elf_header->elf_identifier);
+	printf_magic			(elf_header->e_ident);
+	printf_class			(elf_header->e_ident);
+	printf_data				(elf_header->e_ident);
+	printf_version			(elf_header->e_ident);
+	printf_os_abi			(elf_header->e_ident);
+	printf_abi_version		(elf_header->e_ident);
+	printf_type				(elf_header->e_type, elf_header->e_ident);
+	printf_entry_point_addr	(elf_header->e_entry, elf_header->e_ident);
 
 	free(elf_header);
 	close_elf_file(file_open);
