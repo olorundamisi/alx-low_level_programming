@@ -16,7 +16,7 @@
  */
 int main(int __attribute__((__unused__)) argc, char **argv)
 {
-	char codex[], key[7];
+	char *codex, key[7];
 	int size = strlen(argv[1]), tmp;
 	int i;
 
@@ -51,7 +51,6 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 	for (i = 0; i < argv[1][0]; i++)
 		tmp = rand();
 	key[5] = codex[(tmp ^ 229) & 63];
-
 	key[6] = '\0';
 	printf("%s", key);
 
